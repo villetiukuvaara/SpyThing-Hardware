@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ISL21070
+D VRef Series 2.048V/2.5V 0.25/0.2% 30ppm/K [SOT-23]
+$ENDCMP
+#
+#End Doc Library

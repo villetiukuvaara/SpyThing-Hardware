@@ -1,0 +1,36 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LME49721
+D Rail-to-Rail Audio Amplifier
+K LME49721
+F http://www.ti.com/lit/ds/symlink/lme49721.pdf
+$ENDCMP
+#
+$CMP MP34TD01-M
+D 3mm x 4mm Digital MEMS Microphone
+$ENDCMP
+#
+$CMP Micro_SD_Card
+D Micro SD Card Socket
+K connector SD microsd
+F http://katalog.we-online.de/em/datasheet/693072010801.pdf
+$ENDCMP
+#
+$CMP PMGD280UN
+D Transistor N-MOSFET (general)
+K nmos n-mos n-mosfet transistor
+$ENDCMP
+#
+$CMP STM32L476RG
+D Core: ARM Cortex-M4 Package: LQFP64 Flash: 256KB Ram: 128KB Frequency: 80MHz Voltage: 1.71..3.6V IO-pins: 51
+K ARM Cortex-M4 STM32L4 STM32L4x6
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00108832.pdf
+$ENDCMP
+#
+$CMP STM32L476RGTx
+D Core: ARM Cortex-M4 Package: LQFP64 Flash: 256KB Ram: 128KB Frequency: 80MHz Voltage: 1.71..3.6V IO-pins: 51
+K ARM Cortex-M4 STM32L4 STM32L4x6
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00108832.pdf
+$ENDCMP
+#
+#End Doc Library

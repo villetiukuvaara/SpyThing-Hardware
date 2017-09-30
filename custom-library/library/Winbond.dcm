@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP W25Q16JVSNIQ
+D Mem Flash 8Mb SPI/DualSPI/QuadSPI 133MHz [SOIC-8]
+$ENDCMP
+#
+$CMP W25X40CLSNIG
+D Mem Flash 4Mb (512Kx8, 512KB) SPI 104MHz [SOIC-8]
+$ENDCMP
+#
+#End Doc Library

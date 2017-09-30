@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# REE-0505S
+#
+DEF REE-0505S U 0 40 Y Y 1 F N
+F0 "U" 0 400 50 H V C CNN
+F1 "REE-0505S" 0 300 50 H V C CNN
+F2 "manuf:RECOM-REE-0505S" 0 -300 50 H I C CNN
+F3 "https://www.recom-power.com/pdf/Econoline/REE.pdf" 0 -400 50 H I C CNN
+F4 "Recom" 0 -600 50 H I C CNN "Manuf"
+F5 "Recom REE-0505S" 0 -500 50 H I C CNN "BOM"
+F6 "REE-0505S" 0 -700 50 H I C CNN "MPN"
+DRAW
+S -350 200 350 -200 0 1 10 f
+S -50 200 50 -200 0 1 0 F
+X +IN 1 -500 100 150 R 50 50 1 1 W
+X -IN 2 -500 -100 150 R 50 50 1 1 W
+X -OUT 4 500 -100 150 L 50 50 1 1 W
+X +OUT 6 500 100 150 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+#End Library

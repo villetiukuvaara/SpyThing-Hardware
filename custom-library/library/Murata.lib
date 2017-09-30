@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# OKX-T/5-W5N-C
+#
+DEF OKX-T/5-W5N-C U 0 40 Y Y 1 F N
+F0 "U" 0 450 50 H V C CNN
+F1 "OKX-T/5-W5N-C" 0 350 50 H V C CNN
+F2 "manuf:MURATA-OKX-T5-W5" 0 -400 50 H I C CNN
+F3 "http://power.murata.com/data/power/okx-t5-w5.pdf" 0 -500 50 H I C CNN
+F4 "Murata" 0 -700 50 H I C CNN "Manuf"
+F5 "OKX-T/5-W5N-C" 0 -800 50 H I C CNN "MPN"
+F6 "Murata OKX-T/5-W5N-C" 0 -600 50 H I C CNN "BOM"
+DRAW
+S -450 300 450 -300 0 1 10 f
+X OUT 1 600 200 150 L 50 50 1 1 w
+X TRIM 2 600 -200 150 L 50 50 1 1 P
+X GND 3 -600 -200 150 R 50 50 1 1 W
+X IN 4 -600 100 150 R 50 50 1 1 W
+X OFF/~ON 5 -600 200 150 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

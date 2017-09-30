@@ -1,0 +1,648 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:switches
+LIBS:battery_management
+LIBS:ESD_Protection
+LIBS:tracking_device
+LIBS:u-blox
+LIBS:tracking_device-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLegal 14000 8500
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 9700 5500 0    60   UnSpc ~ 0
+VCC
+Text HLabel 8000 6650 2    60   UnSpc ~ 0
+RADIO_DIO_1
+Text HLabel 8000 6750 2    60   UnSpc ~ 0
+RADIO_DIO_2
+Text HLabel 8000 6850 2    60   UnSpc ~ 0
+RADIO_DIO_3
+Text HLabel 8000 6550 2    60   UnSpc ~ 0
+RADIO_DIO_0
+Text HLabel 8000 6250 2    60   UnSpc ~ 0
+RADIO_RESET_N
+Text HLabel 8000 4450 2    60   UnSpc ~ 0
+RADIO_SPI_NSS
+$Comp
+L CONN_01X06 J6
+U 1 1 59A76B28
+P 12150 1300
+F 0 "J6" H 12150 1650 50  0000 C CNN
+F 1 "CONN_01X06" V 12250 1300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 12150 1300 50  0001 C CNN
+F 3 "" H 12150 1300 50  0001 C CNN
+	1    12150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 J7
+U 1 1 59A77202
+P 12400 3000
+F 0 "J7" H 12400 3200 50  0000 C CNN
+F 1 "CONN_01X03" V 12500 3000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 12400 3000 50  0001 C CNN
+F 3 "" H 12400 3000 50  0001 C CNN
+	1    12400 3000
+	1    0    0    -1  
+$EndComp
+Text Label 11400 2900 0    60   ~ 0
+DEBUG_UART_TX
+Text Label 11400 3000 0    60   ~ 0
+DEBUG_UART_RX
+$Comp
+L C C16
+U 1 1 59A77466
+P 9900 6100
+F 0 "C16" H 9925 6200 50  0000 L CNN
+F 1 "100n" H 9925 6000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9938 5950 50  0001 C CNN
+F 3 "" H 9900 6100 50  0001 C CNN
+	1    9900 6100
+	1    0    0    -1  
+$EndComp
+Text Label 11350 1050 0    60   ~ 0
+VDD
+Text Label 11350 1150 0    60   ~ 0
+SWCLK
+Text Label 11350 1250 0    60   ~ 0
+GND
+Text Label 11350 1350 0    60   ~ 0
+SWDIO
+Text Label 11350 1450 0    60   ~ 0
+NRST
+Text Label 11350 1550 0    60   ~ 0
+SWO
+Text Label 8400 1450 2    60   ~ 0
+NRST
+Text Label 3200 1000 0    60   ~ 0
+MCU_GND
+Text Label 10250 5500 2    60   ~ 0
+MCU_VCC
+Text Label 5150 1000 2    60   ~ 0
+MCU_VCC
+Text Label 11400 3100 0    60   ~ 0
+MCU_GND
+Text Label 9400 5900 0    60   ~ 0
+MCU_VCC
+Text Label 9400 6300 0    60   ~ 0
+MCU_GND
+$Comp
+L Crystal Y1
+U 1 1 59B38DAB
+P 10200 4000
+F 0 "Y1" H 10200 4150 50  0000 C CNN
+F 1 "ABS07-120-32.768kHz-T" H 10200 3850 50  0000 C CNN
+F 2 "Crystals:Crystal_SMD_MicroCrystal_CC7V-T1A-2pin_3.2x1.5mm_HandSoldering" H 10200 4000 50  0001 C CNN
+F 3 "" H 10200 4000 50  0001 C CNN
+	1    10200 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C15
+U 1 1 59B38E77
+P 9550 4200
+F 0 "C15" H 9575 4300 50  0000 L CNN
+F 1 "6p" H 9575 4100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9588 4050 50  0001 C CNN
+F 3 "" H 9550 4200 50  0001 C CNN
+	1    9550 4200
+	-1   0    0    -1  
+$EndComp
+Text Label 9000 4450 0    60   ~ 0
+MCU_GND
+$Comp
+L STM32L476RG U6
+U 1 1 59B8C0F3
+P 4200 4400
+F 0 "U6" H 700 7450 50  0000 L BNN
+F 1 "STM32L476RG" H 7600 7450 50  0000 R BNN
+F 2 "LQFP64" H 7550 7350 50  0001 R TNN
+F 3 "" H 3500 4700 50  0001 C CNN
+	1    4200 4400
+	-1   0    0    -1  
+$EndComp
+Text HLabel 8000 3350 2    60   UnSpc ~ 0
+SDMMC_D2
+Text HLabel 8000 3450 2    60   UnSpc ~ 0
+SDMMC_D3
+Text HLabel 8000 3550 2    60   UnSpc ~ 0
+SDMMC_CK
+Text HLabel 8000 2150 2    60   UnSpc ~ 0
+SDMMC_CMD
+Text HLabel 8000 3250 2    60   UnSpc ~ 0
+SDMMC_D1
+Text HLabel 8000 3150 2    60   UnSpc ~ 0
+SDMMC_D0
+Text HLabel 8000 2550 2    60   UnSpc ~ 0
+DFSDM_CKOUT
+Text HLabel 8000 5850 2    60   UnSpc ~ 0
+DFSDM_DATAIN0
+Text HLabel 8000 6350 2    60   UnSpc ~ 0
+GPS_I2C_SCL
+Text HLabel 8000 6450 2    60   UnSpc ~ 0
+GPS_I2C_SDA
+Text HLabel 8000 4650 2    60   UnSpc ~ 0
+RADIO_SPI_MISO
+Text HLabel 8000 4750 2    60   UnSpc ~ 0
+RADIO_SPI_MOSI
+Text HLabel 8000 5250 2    60   UnSpc ~ 0
+USB_DP
+Text HLabel 8000 5150 2    60   UnSpc ~ 0
+USB_DM
+Text HLabel 8000 5050 2    60   UnSpc ~ 0
+USB_ID
+$Comp
+L R R25
+U 1 1 59BE1ED5
+P 8800 1350
+F 0 "R25" V 8880 1350 50  0000 C CNN
+F 1 "DNI" V 8800 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8730 1350 50  0001 C CNN
+F 3 "" H 8800 1350 50  0001 C CNN
+	1    8800 1350
+	-1   0    0    1   
+$EndComp
+Text Label 8800 700  3    60   ~ 0
+MCU_VCC
+$Comp
+L R R26
+U 1 1 59BE220F
+P 8800 1750
+F 0 "R26" V 8880 1750 50  0000 C CNN
+F 1 "0" V 8800 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8730 1750 50  0001 C CNN
+F 3 "" H 8800 1750 50  0001 C CNN
+	1    8800 1750
+	1    0    0    -1  
+$EndComp
+Text HLabel 8000 4550 2    60   UnSpc ~ 0
+RADIO_SPI_SCK
+Text Notes 10750 5600 0    60   ~ 0
+TODO: connect debug interface to connector in this page\n
+Text Label 8700 6050 2    60   ~ 0
+SWO
+Text Label 8750 5450 2    60   ~ 0
+SWCLK
+Text Label 8750 5350 2    60   ~ 0
+SWDIO
+$Comp
+L CONN_01X03 J5
+U 1 1 59BE7C26
+P 9250 1550
+F 0 "J5" H 9250 1750 50  0000 C CNN
+F 1 "CONN_01X03" V 9350 1550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 9250 1550 50  0001 C CNN
+F 3 "" H 9250 1550 50  0001 C CNN
+	1    9250 1550
+	1    0    0    -1  
+$EndComp
+Text HLabel 8000 1650 2    60   UnSpc ~ 0
+VBAT
+Text Label 9550 1950 2    60   ~ 0
+MCU_GND
+Text Label 10950 2100 0    60   ~ 0
+NRST
+Wire Wire Line
+	8000 6550 7850 6550
+Wire Wire Line
+	8000 6650 7850 6650
+Wire Wire Line
+	8000 6750 7850 6750
+Wire Wire Line
+	8000 6850 7850 6850
+Wire Wire Line
+	11350 1050 11950 1050
+Wire Wire Line
+	11350 1150 11950 1150
+Wire Wire Line
+	11350 1250 11950 1250
+Wire Wire Line
+	11350 1350 11950 1350
+Wire Wire Line
+	11350 1450 11950 1450
+Wire Wire Line
+	11350 1550 11950 1550
+Wire Wire Line
+	11400 3100 12200 3100
+Wire Wire Line
+	9400 5900 11650 5900
+Wire Wire Line
+	9900 5900 9900 5950
+Wire Wire Line
+	9400 6300 11650 6300
+Wire Wire Line
+	9900 6300 9900 6250
+Wire Wire Line
+	10250 5900 10250 5950
+Connection ~ 9900 5900
+Wire Wire Line
+	10600 5900 10600 5950
+Connection ~ 10250 5900
+Wire Wire Line
+	10950 5900 10950 5950
+Connection ~ 10600 5900
+Wire Wire Line
+	11300 5900 11300 5950
+Connection ~ 10950 5900
+Wire Wire Line
+	10250 6300 10250 6250
+Connection ~ 9900 6300
+Wire Wire Line
+	10600 6300 10600 6250
+Connection ~ 10250 6300
+Wire Wire Line
+	10950 6300 10950 6250
+Connection ~ 10600 6300
+Wire Wire Line
+	11300 6300 11300 6250
+Connection ~ 10950 6300
+Wire Wire Line
+	7850 1450 8400 1450
+Wire Wire Line
+	9700 5500 10250 5500
+Wire Wire Line
+	8700 1550 9050 1550
+Wire Wire Line
+	9550 4000 10050 4000
+Wire Wire Line
+	9550 3850 9550 4050
+Wire Wire Line
+	7850 3750 10950 3750
+Wire Wire Line
+	7850 3850 9550 3850
+Connection ~ 9550 4000
+Wire Wire Line
+	9000 4450 10950 4450
+Wire Wire Line
+	9550 4350 9550 4450
+Connection ~ 9550 4450
+Wire Wire Line
+	7850 3150 8000 3150
+Wire Wire Line
+	7850 3250 8000 3250
+Wire Wire Line
+	7850 3350 8000 3350
+Wire Wire Line
+	7850 3450 8000 3450
+Wire Wire Line
+	8000 3550 7850 3550
+Wire Wire Line
+	8000 2150 7850 2150
+Wire Wire Line
+	8000 2550 7850 2550
+Wire Wire Line
+	8000 5850 7850 5850
+Wire Wire Line
+	7850 6350 8000 6350
+Wire Wire Line
+	7850 6450 8000 6450
+Wire Wire Line
+	7850 4050 8700 4050
+Wire Wire Line
+	7850 4150 8700 4150
+Wire Wire Line
+	7850 7150 8000 7150
+Wire Wire Line
+	8000 5250 7850 5250
+Wire Wire Line
+	7850 5150 8000 5150
+Wire Wire Line
+	8000 5050 7850 5050
+Wire Wire Line
+	8800 1500 8800 1600
+Wire Wire Line
+	8800 700  8800 1200
+Connection ~ 8800 1550
+Wire Wire Line
+	7850 7050 8000 7050
+Wire Wire Line
+	7850 6050 8700 6050
+Wire Wire Line
+	7850 5450 8750 5450
+Wire Wire Line
+	8750 5350 7850 5350
+Wire Wire Line
+	8800 1950 8800 1900
+Wire Wire Line
+	8800 1150 9050 1150
+Wire Wire Line
+	9050 1150 9050 1450
+Connection ~ 8800 1150
+Wire Wire Line
+	9050 1650 9050 1950
+Wire Wire Line
+	8000 1650 7850 1650
+Wire Wire Line
+	8800 1950 9550 1950
+Connection ~ 9050 1950
+Wire Wire Line
+	4250 1300 4250 1000
+Wire Wire Line
+	4250 1000 5150 1000
+Wire Wire Line
+	4350 1300 4350 1000
+Connection ~ 4350 1000
+Wire Wire Line
+	4450 1000 4450 1300
+Connection ~ 4450 1000
+Wire Wire Line
+	4550 1300 4550 1000
+Connection ~ 4550 1000
+Wire Wire Line
+	4650 1000 4650 1300
+Connection ~ 4650 1000
+Wire Wire Line
+	4100 1000 4100 1300
+Wire Wire Line
+	3200 1000 4100 1000
+Wire Wire Line
+	3700 1300 3700 1000
+Connection ~ 3700 1000
+Wire Wire Line
+	3800 1000 3800 1300
+Connection ~ 3800 1000
+Wire Wire Line
+	3900 1300 3900 1000
+Connection ~ 3900 1000
+Wire Wire Line
+	4000 1000 4000 1300
+Connection ~ 4000 1000
+Text Label 12300 2100 2    60   ~ 0
+MCU_GND
+Text Notes 11000 6450 2    60   ~ 0
+100nF per VDD/VSS pair
+$Comp
+L C C22
+U 1 1 59BF0662
+P 11650 6100
+F 0 "C22" H 11675 6200 50  0000 L CNN
+F 1 "4.7u" H 11675 6000 50  0000 L CNN
+F 2 "" H 11688 5950 50  0001 C CNN
+F 3 "" H 11650 6100 50  0001 C CNN
+	1    11650 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 5900 11650 5950
+Connection ~ 11300 5900
+Wire Wire Line
+	11650 6300 11650 6250
+Connection ~ 11300 6300
+NoConn ~ 7850 1850
+NoConn ~ 7850 1950
+NoConn ~ 7850 3650
+NoConn ~ 7850 6150
+Text HLabel 8000 4250 2    60   UnSpc ~ 0
+RCC_LSCO
+Wire Wire Line
+	8000 4250 7850 4250
+NoConn ~ 7850 4350
+NoConn ~ 11050 3700
+$Comp
+L LED D2
+U 1 1 59BF17F5
+P 8950 2600
+F 0 "D2" H 8950 2700 50  0000 C CNN
+F 1 "LED" H 8950 2500 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 8950 2600 50  0001 C CNN
+F 3 "" H 8950 2600 50  0001 C CNN
+	1    8950 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R28
+U 1 1 59BF19BB
+P 9300 3000
+F 0 "R28" V 9380 3000 50  0000 C CNN
+F 1 "220" V 9300 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9230 3000 50  0001 C CNN
+F 3 "" H 9300 3000 50  0001 C CNN
+	1    9300 3000
+	1    0    0    -1  
+$EndComp
+Text Label 10000 3200 2    60   ~ 0
+MCU_GND
+Wire Wire Line
+	8950 3200 10000 3200
+Wire Wire Line
+	9300 3200 9300 3150
+Wire Wire Line
+	8950 3200 8950 3150
+Connection ~ 9300 3200
+Wire Wire Line
+	8950 2850 8950 2750
+Wire Wire Line
+	9300 2850 9300 2750
+Wire Wire Line
+	7850 2350 9300 2350
+Wire Wire Line
+	9300 2350 9300 2450
+Wire Wire Line
+	8950 2450 7850 2450
+NoConn ~ 7850 5950
+$Comp
+L R R24
+U 1 1 59BF23D1
+P 8550 1550
+F 0 "R24" V 8630 1550 50  0000 C CNN
+F 1 "10k" V 8550 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8480 1550 50  0001 C CNN
+F 3 "" H 8550 1550 50  0001 C CNN
+	1    8550 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 1550 7850 1550
+Wire Wire Line
+	8000 6250 7850 6250
+$Comp
+L SW_Push SW1
+U 1 1 59C0698A
+P 11550 2100
+F 0 "SW1" H 11600 2200 50  0000 L CNN
+F 1 "SW_Push" H 11550 2040 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 11550 2300 50  0001 C CNN
+F 3 "" H 11550 2300 50  0001 C CNN
+	1    11550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 2100 10950 2100
+Wire Wire Line
+	11750 2100 12300 2100
+Wire Wire Line
+	10950 3750 10950 4050
+Wire Wire Line
+	10350 4000 10950 4000
+Connection ~ 10950 4000
+Wire Wire Line
+	10950 4450 10950 4350
+$Comp
+L R R27
+U 1 1 59C07A6F
+P 8950 3000
+F 0 "R27" V 9030 3000 50  0000 C CNN
+F 1 "220" V 8950 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8880 3000 50  0001 C CNN
+F 3 "" H 8950 3000 50  0001 C CNN
+	1    8950 3000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7850 4850
+NoConn ~ 7850 4950
+Text Label 8700 4050 2    60   ~ 0
+DEBUG_UART_TX
+Text Label 8700 4150 2    60   ~ 0
+DEBUG_UART_RX
+Wire Wire Line
+	11400 3000 12200 3000
+Wire Wire Line
+	11400 2900 12200 2900
+$Comp
+L C C19
+U 1 1 59C089D0
+P 10950 4200
+F 0 "C19" H 10975 4300 50  0000 L CNN
+F 1 "6p" H 10975 4100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10988 4050 50  0001 C CNN
+F 3 "" H 10950 4200 50  0001 C CNN
+	1    10950 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C17
+U 1 1 59C09613
+P 10250 6100
+F 0 "C17" H 10275 6200 50  0000 L CNN
+F 1 "100n" H 10275 6000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10288 5950 50  0001 C CNN
+F 3 "" H 10250 6100 50  0001 C CNN
+	1    10250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 59C09660
+P 10600 6100
+F 0 "C18" H 10625 6200 50  0000 L CNN
+F 1 "100n" H 10625 6000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10638 5950 50  0001 C CNN
+F 3 "" H 10600 6100 50  0001 C CNN
+	1    10600 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C20
+U 1 1 59C096AC
+P 10950 6100
+F 0 "C20" H 10975 6200 50  0000 L CNN
+F 1 "100n" H 10975 6000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10988 5950 50  0001 C CNN
+F 3 "" H 10950 6100 50  0001 C CNN
+	1    10950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C21
+U 1 1 59C096FD
+P 11300 6100
+F 0 "C21" H 11325 6200 50  0000 L CNN
+F 1 "100n" H 11325 6000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 11338 5950 50  0001 C CNN
+F 3 "" H 11300 6100 50  0001 C CNN
+	1    11300 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 59C09B57
+P 9300 2600
+F 0 "D3" H 9300 2700 50  0000 C CNN
+F 1 "LED" H 9300 2500 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 9300 2600 50  0001 C CNN
+F 3 "" H 9300 2600 50  0001 C CNN
+	1    9300 2600
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7850 2650
+Text HLabel 8000 2950 2    60   UnSpc ~ 0
+RADIO_DIO_4
+Wire Wire Line
+	8000 2950 7850 2950
+Text HLabel 8000 3050 2    60   UnSpc ~ 0
+RADIO_DIO_5
+Wire Wire Line
+	8000 3050 7850 3050
+Text HLabel 8000 2750 2    60   UnSpc ~ 0
+GPS_UART_TX
+Text HLabel 8000 2850 2    60   UnSpc ~ 0
+GPS_UART_RX
+Wire Wire Line
+	8000 2750 7850 2750
+Wire Wire Line
+	7850 2850 8000 2850
+Wire Wire Line
+	7850 4750 8000 4750
+Wire Wire Line
+	8000 4650 7850 4650
+Wire Wire Line
+	7850 4550 8000 4550
+Wire Wire Line
+	8000 4450 7850 4450
+Text HLabel 8000 7050 2    60   UnSpc ~ 0
+PMIC_I2C_SCL
+Text HLabel 8000 7150 2    60   UnSpc ~ 0
+PMIC_I2C_SDA
+NoConn ~ 7850 6950
+NoConn ~ 7850 7250
+Text HLabel 8000 5550 2    60   UnSpc ~ 0
+PMIC_STAT
+Text HLabel 8000 5750 2    60   UnSpc ~ 0
+PMIC_FAST
+Wire Wire Line
+	8000 5550 7850 5550
+Wire Wire Line
+	7850 5750 8000 5750
+NoConn ~ 2450 3350
+NoConn ~ 2300 3050
+$EndSCHEMATC

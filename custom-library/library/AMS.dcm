@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AS1130-BTST
+D LedDriver Crossplex 132LED [TSSOP-28]
+$ENDCMP
+#
+#End Doc Library

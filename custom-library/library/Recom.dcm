@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP REE-0505S
+D DCDC Isolated Vin:5V Vout:5V 1W
+$ENDCMP
+#
+#End Doc Library

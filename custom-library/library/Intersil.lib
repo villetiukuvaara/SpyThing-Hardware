@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# ISL21070
+#
+DEF ISL21070 U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H V C CNN
+F1 "ISL21070" 0 150 50 H V C CNN
+F2 "smd-semi:SOT-23" 0 -400 50 H I C CNN
+F3 "http://www.intersil.com/content/dam/Intersil/documents/isl2/isl21070.pdf" 0 -500 50 H I C CNN
+F4 "Intersil" 0 -700 50 H I C CNN "Manuf"
+F5 "ISL21070CIH3{vout}Z-TK" 0 -800 50 H I C CNN "MPN"
+F6 "Intersil ISL21070CIH3{vout}Z-TK" 0 -600 50 H I C CNN "BOM"
+DRAW
+T 0 0 -50 50 0 0 0 GND Normal 0 C C
+S -200 100 200 -100 0 0 10 f
+X IN 1 -350 50 150 R 50 50 1 1 W
+X OUT 2 350 50 150 L 50 50 1 1 w
+X ~ 3 0 -250 150 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
