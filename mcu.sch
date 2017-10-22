@@ -32,8 +32,8 @@ LIBS:stm32
 LIBS:switches
 LIBS:battery_management
 LIBS:ESD_Protection
-LIBS:tracking_device
 LIBS:u-blox
+LIBS:tracking_device
 LIBS:tracking_device-cache
 EELAYER 25 0
 EELAYER END
@@ -69,7 +69,7 @@ U 1 1 59A76B28
 P 12150 1300
 F 0 "J6" H 12150 1650 50  0000 C CNN
 F 1 "CONN_01X06" V 12250 1300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 12150 1300 50  0001 C CNN
+F 2 "tracking_device:Pin_Header_Straight_1x06_Pitch2.54mm" H 12150 1300 50  0001 C CNN
 F 3 "" H 12150 1300 50  0001 C CNN
 	1    12150 1300
 	1    0    0    -1  
@@ -80,7 +80,7 @@ U 1 1 59A77202
 P 12400 3000
 F 0 "J7" H 12400 3200 50  0000 C CNN
 F 1 "CONN_01X03" V 12500 3000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 12400 3000 50  0001 C CNN
+F 2 "tracking_device:Pin_Header_Straight_1x03_Pitch2.54mm" H 12400 3000 50  0001 C CNN
 F 3 "" H 12400 3000 50  0001 C CNN
 	1    12400 3000
 	1    0    0    -1  
@@ -156,7 +156,7 @@ U 1 1 59B8C0F3
 P 4200 4400
 F 0 "U6" H 700 7450 50  0000 L BNN
 F 1 "STM32L476RG" H 7600 7450 50  0000 R BNN
-F 2 "LQFP64" H 7550 7350 50  0001 R TNN
+F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 7550 7350 50  0001 R TNN
 F 3 "" H 3500 4700 50  0001 C CNN
 	1    4200 4400
 	-1   0    0    -1  
@@ -417,7 +417,7 @@ U 1 1 59BF0662
 P 11650 6100
 F 0 "C22" H 11675 6200 50  0000 L CNN
 F 1 "4.7u" H 11675 6000 50  0000 L CNN
-F 2 "" H 11688 5950 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 11688 5950 50  0001 C CNN
 F 3 "" H 11650 6100 50  0001 C CNN
 	1    11650 6100
 	1    0    0    -1  
@@ -430,7 +430,6 @@ Wire Wire Line
 Connection ~ 11300 6300
 NoConn ~ 7850 1850
 NoConn ~ 7850 1950
-NoConn ~ 7850 3650
 NoConn ~ 7850 6150
 Text HLabel 8000 4250 2    60   UnSpc ~ 0
 RCC_LSCO
@@ -645,4 +644,14 @@ Wire Wire Line
 	7850 5750 8000 5750
 NoConn ~ 2450 3350
 NoConn ~ 2300 3050
+Text HLabel 8000 3650 2    60   UnSpc ~ 0
+SD_CD
+Wire Wire Line
+	8000 3650 7850 3650
+Text HLabel 9700 5600 0    60   UnSpc ~ 0
+GND
+Text Label 10250 5600 2    60   ~ 0
+MCU_GND
+Wire Wire Line
+	10250 5600 9700 5600
 $EndSCHEMATC

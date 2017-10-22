@@ -1,4 +1,4 @@
-update=Saturday, September 30, 2017 'amt' 09:39:26 am
+update=Saturday, October 14, 2017 'pmt' 04:08:52 pm
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,5 +62,5 @@ LibName30=stm32
 LibName31=switches
 LibName32=battery_management
 LibName33=ESD_Protection
-LibName34=custom-library/library/tracking_device
-LibName35=custom-library/library/u-blox
+LibName34=custom-library/library/u-blox
+LibName35=custom-library/library/tracking_device

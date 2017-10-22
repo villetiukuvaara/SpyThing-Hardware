@@ -16,6 +16,12 @@ K connector SD microsd
 F http://katalog.we-online.de/em/datasheet/693072010801.pdf
 $ENDCMP
 #
+$CMP Micro_SD_Connector
+D Micro SD Card Socket
+K connector SD microsd
+F http://katalog.we-online.de/em/datasheet/693072010801.pdf
+$ENDCMP
+#
 $CMP PMGD280UN
 D Transistor N-MOSFET (general)
 K nmos n-mos n-mosfet transistor
