@@ -34,6 +34,7 @@ LIBS:battery_management
 LIBS:ESD_Protection
 LIBS:u-blox
 LIBS:tracking_device
+LIBS:RF_Modules
 LIBS:tracking_device-cache
 EELAYER 25 0
 EELAYER END

@@ -1,4 +1,4 @@
-update=Saturday, October 14, 2017 'pmt' 04:08:52 pm
+update=Sunday, October 22, 2017 'pmt' 08:08:44 pm
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=custom-library/library
+LibDir=custom-library/library;cascologix-library/KiCAD_Libraries/Schematic
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -64,3 +64,4 @@ LibName32=battery_management
 LibName33=ESD_Protection
 LibName34=custom-library/library/u-blox
 LibName35=custom-library/library/tracking_device
+LibName36=cascologix-library/KiCAD_Libraries/Schematic/RF_Modules

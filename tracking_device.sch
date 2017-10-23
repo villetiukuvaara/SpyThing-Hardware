@@ -34,6 +34,7 @@ LIBS:battery_management
 LIBS:ESD_Protection
 LIBS:u-blox
 LIBS:tracking_device
+LIBS:RF_Modules
 LIBS:tracking_device-cache
 EELAYER 25 0
 EELAYER END
@@ -306,17 +307,6 @@ F 1 "GND" H 950 4400 50  0000 C CNN
 F 2 "" H 950 4550 50  0001 C CNN
 F 3 "" H 950 4550 50  0001 C CNN
 	1    950  4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C4
-U 1 1 59B20D07
-P 2400 4350
-F 0 "C4" H 2425 4450 50  0000 L CNN
-F 1 "1u" H 2425 4250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2438 4200 50  0001 C CNN
-F 3 "" H 2400 4350 50  0001 C CNN
-	1    2400 4350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1660,4 +1650,15 @@ Wire Wire Line
 	7150 5600 7150 5700
 Wire Wire Line
 	7150 5600 7050 5600
+$Comp
+L C C4
+U 1 1 59B20D07
+P 2400 4350
+F 0 "C4" H 2425 4450 50  0000 L CNN
+F 1 "1u" H 2425 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2438 4200 50  0001 C CNN
+F 3 "" H 2400 4350 50  0001 C CNN
+	1    2400 4350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
