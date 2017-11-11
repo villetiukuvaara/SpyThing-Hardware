@@ -1,4 +1,4 @@
-update=Sunday, October 22, 2017 'pmt' 08:08:44 pm
+update=Thursday, November 02, 2017 'pmt' 06:49:20 pm
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,8 @@ LibName33=ESD_Protection
 LibName34=custom-library/library/u-blox
 LibName35=custom-library/library/tracking_device
 LibName36=cascologix-library/KiCAD_Libraries/Schematic/RF_Modules
+LibName37=cascologix-library/KiCAD_Libraries/Schematic/Electromechanical
+LibName38=cascologix-library/KiCAD_Libraries/Schematic/Test_Point
+LibName39=custom-library/library/electomech-misc
+LibName40=custom-library/library/_electromech
+LibName41=cascologix-library/KiCAD_Libraries/Schematic/Mounting_Hole
