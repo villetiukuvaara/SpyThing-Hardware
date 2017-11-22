@@ -46,9 +46,9 @@ EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 2 3
-Title ""
+Title "Microcontroller"
 Date ""
-Rev ""
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -212,8 +212,6 @@ F 3 "" H 8800 1750 50  0001 C CNN
 $EndComp
 Text HLabel 8000 4550 2    60   UnSpc ~ 0
 RADIO_SPI_SCK
-Text Notes 10750 5600 0    60   ~ 0
-TODO: connect debug interface to connector in this page\n
 Text Label 8700 6050 2    60   ~ 0
 SWO
 Text Label 8750 5450 2    60   ~ 0

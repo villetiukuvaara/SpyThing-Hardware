@@ -1,4 +1,4 @@
-update=Thursday, November 02, 2017 'pmt' 06:49:20 pm
+update=Thursday, November 16, 2017 'pmt' 10:00:32 pm
 version=1
 last_client=kicad
 [pcbnew]
@@ -70,3 +70,13 @@ LibName38=cascologix-library/KiCAD_Libraries/Schematic/Test_Point
 LibName39=custom-library/library/electomech-misc
 LibName40=custom-library/library/_electromech
 LibName41=cascologix-library/KiCAD_Libraries/Schematic/Mounting_Hole
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
