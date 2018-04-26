@@ -198,10 +198,12 @@ Connection ~ 5900 3850
 Text Label 7000 4300 2    60   ~ 0
 RADIO_GND
 Wire Wire Line
-	5900 4300 7000 4300
+	5900 4300 7050 4300
 Wire Wire Line
 	6400 4300 6400 4200
 Wire Wire Line
 	5900 4300 5900 4200
 Connection ~ 6400 4300
+Text HLabel 7050 4300 2    60   UnSpc ~ 0
+GND
 $EndSCHEMATC
